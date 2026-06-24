@@ -263,7 +263,6 @@ ${toDelete ? `(attempted deleting '${toDelete}')` : ''}` }
 
   const renderLineWithTables = (line: TerminalLine, index: number) => {
     const i = index
-    console.log('Line: ' + line)
     if (line.value[0] === undefined) return renderLineWithLinks(line, index)
     const lineIsTable = ['┌', '│', '└'].includes(line.value[0])
 
