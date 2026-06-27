@@ -4,12 +4,12 @@
   "private": true,
   "scripts": {
     "build": "next build --webpack",
-    "dev": "next dev --webpack",
+    "dev": "next dev --webpack --hostname 0.0.0.0",
     "postinstall": "yarn prisma",
     "prisma": "yarn pnpify prisma generate",
     "rm:nm": "rm -rf ./node_modules",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start --hostname 0.0.0.0"
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
